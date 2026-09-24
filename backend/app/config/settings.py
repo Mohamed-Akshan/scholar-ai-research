@@ -7,6 +7,8 @@ class Settings(BaseSettings):
     tavily_api_key:str
     groq_model: str = "openai/gpt-oss-120b"
 
+    frontend_url: str = "http://localhost:5173"
+
     model_config=SettingsConfigDict(
         env_file=".env",
         extra="ignore"
